@@ -1,104 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset ="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIN135-PrelimExam</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
 </head>
 
-    <body>
-        <header>
-        <h1>Brent M.Centeno</h1>
-        <p>A Information Technology Student from Ceu Malolos</p>
-        <nav aria-label="Main Navigation">
-            <a href="#about">About Me</a>|
-            <a href="#skills">Skills</a>|
-            <a href="#education">Education and Trainings</a>|
-            <a href="#awards">Awards and Achievements</a>|
-            <a href="#contact">Contact Me</a>
-        </nav>
+<body id="top">
+
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EqfjJw9r53aj2ZdpPOSq_5Q0AhpNquDCZ1A2MvgEMA&s" alt="THE GOAT" width="200"height="200">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Brent Centeno</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639953776645">+63 995 377 6645</a></li>
+                    <li><a href="mailto:centenobrent@email.com">centenobrent@email.com</a></li>
+                    <li><a href="https://github.com/brentcenteno" target="_blank" rel="noopener noreferrer">https://github.com/brentcenteno</a>
+                    </li>
+                </ul>
+                <p class="profile">
+                    An IT student who enjoys building clean, responsive websites.
+                    I like turning ideas into simple, easy-to-use web pages and
+                    I'm always learning new tools and techniques.
+                </p>
+            </div>
+
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EqfjJw9r53aj2ZdpPOSq_5Q0AhpNquDCZ1A2MvgEMA&s" alt="THE GOAT" width="200"height="200">
-            <h3>Personal Information</h3>
-            <p><strong>Name: </strong>Brent M.Centeno</p>
-            <p>Email: <a href="mailto:centenobrent23@gmail.com">centenobrent23@gmail.com</a></p>
-            <p>Contact Number: <a href="tel:+639953776645">+639953776645</a></p>
-            <p><strong>Github: </strong><a href="https://github.com/brentcenteno"target="_blank">https://github.com/brentcenteno</a></p>
-                 
-        </section>
-        
-        <section id="skills">
+    <main class="wrapper">
+
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
             <h2>Skills</h2>
-            <ul>
-                <li>Can read and write</li>
-                <li>Former top bene</li>
-                <li>Can codee</li>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
             </ul>
+        </section>
 
-    </section>
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Elementary:</strong>Iba Elementary School</li>
-            <li><strong>High School:</strong>CI</li>
-            <li><strong>College:</strong>Centro Escolar University</li>
-        </ul>
-    </section>
-    
-    <section id="awards">
-        <h2>Awards and Achievements</h2>
-        <ol>
-            <li>Best jungler</li>
-            <li>Best duelist</li>
-            <li>Best smoker</li>
-            <li>GitHub Project Collaborator 2026</li>
-        </ol>
-    </section>
+            <div class="entry">
+                <span class="entry-year">2026 - Present</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="entry-school">Centro Escolar University, Malolos</p>
+            </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
+            <div class="entry">
+                <span class="entry-year">2022 - 2024</span>
+                <h3>Senior High School - TVL Strand</h3>
+                <p class="entry-school">STI Malolos</p>
+            </div>
+        </section>
 
-                <div>
-                <label for="name">Name:</label><br/>
-                <input id="name" type="text" name="name" placeholder="Brent M. Centeno" required>
-                </div> <br/>
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>
+                    <strong>Dean's Lister</strong> 2nd Semester, A.Y. 2025-2026
+                </li>
+                <li>
+                    <strong>Hero: Benedetta</strong> - Former top Ph
+                </li>
+                <li>
+                    <strong>With Honors</strong> - Senior High School, 2022-2024
+                </li>
+            </ul>
+        </section>
 
-                <div>
-                <label for="emaiL">Email:</label><br/>
-                <input id="email" type="email" email="email" placeholder="centenobrent@gmail.com" required>
-                </div><br/>
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-                <div>
-                <label for="message">Message:</label><br/>
-                <input id="Message" row="3" message="message" placeholder="Message here" required>
-                </div><br/>
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
 
-                <button type="submit">Contact Me</button>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
-            </section>  
-        </main>  
-         
-        <footer>
-        <nav>
-            <a href="#about">About Me</a>
-            <span></span>
-            <a href="#skills">Skills</a>
-            <span></span>
-            <a href="#education">Education</a>
-            <span></span>
-            <a href="#awards">Award and Achivements</a>
-            <span></span>
-            <a href="#contact">Contact</a>
-            <span></span>
-        </nav>
-        </footer>
+        </section>
 
-    </section>
     </main>
-    </body>
+
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Brent Centeno &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+</body>
+
+</html>
